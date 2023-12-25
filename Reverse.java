@@ -10,9 +10,9 @@ public class Reverse {
 			System.out.print(s.charAt(n-1-i));
 		} System.out.println();
 		if(n%2 != 0) {
-			System.out.println("The middle character is " + s.charAt((n-1) /2));
+			System.out.println("The middle character is " + s.charAt((n-1)/2));
 		} else {
-			System.out.println("The middle character is " + s.charAt(n/2));
+			System.out.println("The middle character is " + s.charAt((n/2)-1));
 		}
 	}
 }
