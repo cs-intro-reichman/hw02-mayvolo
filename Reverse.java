@@ -12,7 +12,7 @@ public class Reverse {
 		if(n%2 != 2) {
 			System.out.println("The middle character is " + s.charAt(n/2));
 		} else {
-			System.out.println("The middle character is " + s.charAt((n-2)/2));
+			System.out.println("The middle character is " + s.charAt((n-1)/2));
 		}
 	}
 }
