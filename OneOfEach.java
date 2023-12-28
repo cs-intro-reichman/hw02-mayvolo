@@ -6,29 +6,20 @@
 public class OneOfEach {
 	public static void main (String[] args) {
 		int sum = 0;
-		double x = Math.random();
-		if(x < 0.5) {
-			while(x < 0.5) {
+		boolean itisaboy = false;
+		boolean itisagirl = false;
+		while(!itisaboy || !itisagirl) {
+			if(Math.random() < 0.5) {
 				System.out.print("b ");
 				sum++;
-				x = Math.random();
-				if(x >= 0.5) {
-					System.out.print("g ");
-					sum++;
-			}
-		}
-		} else {
-			while (x >= 0.5) {
+				itisaboy = true;
+			} else {
 				System.out.print("g ");
 				sum++;
-				x = Math.random();
-				if(x < 0.5) {
-					System.out.print("b ");
-					sum++;
-				}
+				itisagirl = true;
 			}
-		}
+		} 
 		System.out.println();
-		System.out.println("You made it... and you now have " + sum + " children.");
+		System.out.println("You made it... and you now have " + sum +  " children.");
 		}
 }
