@@ -17,7 +17,5 @@ public class Perfect {
 		} else {
 			System.out.println(N + " is not a perfect number");
 		}
-		
-
 	}
 }
